@@ -12,4 +12,6 @@ else
 	#echo " >>se ejecuta el script: ,$commit"
 	git add . && git commit -a -m "commit:$commit" && git push
 	#git add . && git commit -m"commit:$commit"
+	#cachear credenciales creo que son 3 horas
+	#git config --global credential.helper 'cache --timeout=10800'
 fi
