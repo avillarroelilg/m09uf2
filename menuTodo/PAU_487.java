@@ -1,4 +1,4 @@
-package Exercici_1_Threads_implements_Runnable;
+package menuTodo;
 
 import Pantalles.MenuConstructorPantalla;
 
@@ -7,6 +7,14 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.Scanner;
 
+import Exercici_1_Threads_implements_Runnable.Exercici_1;
+import Exercici_2_Threads_extends_Thread_v1.exercici_2_v1;
+import Exercici_2_Threads_extends_Thread_v2.exercici_2_v2;
+import Exercici_3_Threads_amb_Notify_Wait.exercici_2_v3;
+import Exercici_4_Threads_amb_Semafors_v1.exercici_2_v4;
+import Exercici_4_Threads_amb_Semafors_v2.exercici_2_v5;
+import Exercici_4_Threads_amb_Semafors_v3.exercici_2_v6;
+
 
 
 /**
@@ -14,12 +22,6 @@ import java.util.Scanner;
  * @author gmartinez
  */
 public class PAU_487 {
-    /*
-    SISTEMA DE NAVEGACIÓ BASAT EN WAYPOINTS.
-    ES DONEN D'ALTA DIVERSOS WAYPOINTS DE L'ESPAI (ORBITA MARCIANA, PUNT LAGRANGE TERRA-LLUNA, PHOBOS, SATURN, LLUNA,...).
-    ES PODEN MEMORITZAR DIVERSES RUTES AFEGINT DIVERSOS WAYPOINTS A CADA RUTA.
-    
-    */
     
     public static void bloquejarPantalla() {
         Scanner in = new Scanner(System.in);
@@ -45,13 +47,18 @@ public class PAU_487 {
             
             menu.append("1. Threads implements Runnable");
             menu.append(System.getProperty("line.separator"));
-            menu.append("2. ");
+            menu.append("2. Threads extends Thread (I)");
             menu.append(System.getProperty("line.separator"));
-            menu.append("3. ");
+            menu.append("3. Threads extends Thread (II)");
             menu.append(System.getProperty("line.separator"));
-            menu.append("4. ");
+            menu.append("4. Threads amb wait() i notify()");
             menu.append(System.getProperty("line.separator"));
-            menu.append("5. ");
+            menu.append("5. Threads amb semàfors (I)");
+            menu.append(System.getProperty("line.separator"));
+            menu.append("6. Threads amb semàfors (II)");
+            menu.append(System.getProperty("line.separator"));
+            menu.append(System.getProperty("line.separator"));
+            menu.append("10. LLançar tots els torpedes");
             menu.append(System.getProperty("line.separator"));
             menu.append(System.getProperty("line.separator"));
             
@@ -66,7 +73,7 @@ public class PAU_487 {
             
             switch (opcio) {
                 case "1":
-					try {
+                	try {
 						Exercici_1.inicialitzarPrograma();
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
@@ -75,19 +82,27 @@ public class PAU_487 {
                     bloquejarPantalla();
                     break;
                 case "2":
-
+                	exercici_2_v1.inicialitzarPrograma();
                     bloquejarPantalla();
                     break;
                 case "3":
-
+                	exercici_2_v2.inicialitzarPrograma();
                     bloquejarPantalla();
                     break;
                 case "4":
-
+                	exercici_2_v3.inicialitzarPrograma();
                     bloquejarPantalla();
                     break;
                 case "5":
-
+                	exercici_2_v4.inicialitzarPrograma();
+                    bloquejarPantalla();
+                    break;    
+                case "6":
+                	exercici_2_v5.inicialitzarPrograma();
+                    bloquejarPantalla();
+                    break;    
+                case "10":
+                	exercici_2_v6.inicialitzarPrograma();
                     bloquejarPantalla();
                     break;
                 case "50":

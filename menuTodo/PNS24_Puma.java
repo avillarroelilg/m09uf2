@@ -1,26 +1,18 @@
-package src;
+package menuTodo;
 
 import Pantalles.MenuConstructorPantalla;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Deque;
 import java.util.Scanner;
 
 
-
-/**
- *
- * @author gmartinez
- */
-public class PAU_487 {
-    /*
-    SISTEMA DE NAVEGACIÓ BASAT EN WAYPOINTS.
-    ES DONEN D'ALTA DIVERSOS WAYPOINTS DE L'ESPAI (ORBITA MARCIANA, PUNT LAGRANGE TERRA-LLUNA, PHOBOS, SATURN, LLUNA,...).
-    ES PODEN MEMORITZAR DIVERSES RUTES AFEGINT DIVERSOS WAYPOINTS A CADA RUTA.
-    
-    */
-    
+public class PNS24_Puma {
+	
+	public static void main(String[] args) throws IOException  {
+        menuPNS24Puma();
+    }
+	
+	
     public static void bloquejarPantalla() {
         Scanner in = new Scanner(System.in);
         System.out.print("\nToca 'C' per a continuar ");
@@ -30,66 +22,54 @@ public class PAU_487 {
     }
     
     
-    public static void menuPAU_487() { //throws IOException  {
+    static void menuPNS24Puma() throws IOException  {
         String opcio;
-        Scanner sc = new Scanner(System.in);
         StringBuilder menu = new StringBuilder("");
+        Scanner sc = new Scanner(System.in);
         
-        do {
+        do {            
             menu.delete(0, menu.length());
-            
+                     
             menu.append(System.getProperty("line.separator"));
-            menu.append("PAU-487");
-            menu.append(System.getProperty("line.separator"));
-            menu.append(System.getProperty("line.separator")); 
-            
-            menu.append("1. Threads implements Runnable");
-            menu.append(System.getProperty("line.separator"));
-            menu.append("2. ");
-            menu.append(System.getProperty("line.separator"));
-            menu.append("3. ");
-            menu.append(System.getProperty("line.separator"));
-            menu.append("4. ");
-            menu.append(System.getProperty("line.separator"));
-            menu.append("5. ");
+            menu.append("PNS-24 Puma");
             menu.append(System.getProperty("line.separator"));
             menu.append(System.getProperty("line.separator"));
-            
-            menu.append("50. Tornar al menú pare (PNS-24 Puma)");
+            menu.append("1. Sistema de navegació Krona");
             menu.append(System.getProperty("line.separator"));
-            
+            menu.append("2. Sistema d'atac Orion");
+            menu.append(System.getProperty("line.separator"));
+            menu.append("3. Sistema de defensa Sirena");
+            menu.append(System.getProperty("line.separator"));
+            menu.append("4. Sistema de comunicacions Evkalipt");
+            menu.append(System.getProperty("line.separator"));
+            menu.append("5. Sistema d'identificació Khom-Nikel");
+            menu.append(System.getProperty("line.separator"));
+            menu.append("6. Sistema de visualització PPV");
+            menu.append(System.getProperty("line.separator"));
+            menu.append("7. Sistema de grabació Kristall");
+            menu.append(System.getProperty("line.separator"));
+            menu.append("10. Control de sondes Delta");
+            menu.append(System.getProperty("line.separator"));
+            menu.append(System.getProperty("line.separator"));
+            menu.append("11. Control d'stock de magatzem PAU-487");
+            menu.append(System.getProperty("line.separator"));
+            menu.append(System.getProperty("line.separator"));
+            menu.append("50. Tancar el sistema");
+            menu.append(System.getProperty("line.separator"));
             
             System.out.print(MenuConstructorPantalla.constructorPantalla(menu));
             
             opcio = sc.next();
             
-            
             switch (opcio) {
-                case "1":
-					try {
-						Exercici_1.inicialitzarPrograma();
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-                    bloquejarPantalla();
-                    break;
-                case "2":
+                case "10":
 
                     bloquejarPantalla();
-                    break;
-                case "3":
-
+                    break;  
+                case "11":
+                	PAU_487.menuPAU_487();
                     bloquejarPantalla();
-                    break;
-                case "4":
-
-                    bloquejarPantalla();
-                    break;
-                case "5":
-
-                    bloquejarPantalla();
-                    break;
+                    break;                    
                 case "50":
                     break; 
                 default:
@@ -97,5 +77,4 @@ public class PAU_487 {
             }   
         } while (!opcio.equals("50"));
     }
-    
 }
