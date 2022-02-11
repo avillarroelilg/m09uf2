@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# empezamos !!!
+# empezamos !!
 echo "<< Hola!!,comencemos ^-^ >>"
 echo "		escribe el commit >>:"
 read commit
