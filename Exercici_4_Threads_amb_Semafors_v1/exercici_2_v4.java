@@ -5,11 +5,6 @@
  */
 package Exercici_4_Threads_amb_Semafors_v1;
 
-
-/**
- *
- * @author gines
- */
 public class exercici_2_v4 {
 	static public void inicialitzarPrograma() {
         MagatzemCombustible_v4 magatzemDeCombustible_v4 = new MagatzemCombustible_v4();

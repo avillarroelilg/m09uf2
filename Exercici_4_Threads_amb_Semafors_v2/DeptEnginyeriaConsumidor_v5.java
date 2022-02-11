@@ -5,11 +5,6 @@
  */
 package Exercici_4_Threads_amb_Semafors_v2;
 
-
-/**
- *
- * @author gines
- */
 public class DeptEnginyeriaConsumidor_v5 implements Runnable {
     private MagatzemCombustible_v5 magatzemDeCombustible;
     private int numContenidorsPerAgafar;

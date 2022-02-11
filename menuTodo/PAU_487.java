@@ -15,12 +15,6 @@ import Exercici_4_Threads_amb_Semafors_v1.exercici_2_v4;
 import Exercici_4_Threads_amb_Semafors_v2.exercici_2_v5;
 import Exercici_4_Threads_amb_Semafors_v3.exercici_2_v6;
 
-
-
-/**
- *
- * @author gmartinez
- */
 public class PAU_487 {
     
     public static void bloquejarPantalla() {

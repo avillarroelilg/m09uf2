@@ -9,10 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.Semaphore;
 
-/**
- *
- * @author gines
- */
 public class MagatzemCombustible_v4 {
     ArrayList <Character> posicionsEnMagatzem = new ArrayList<Character>();
     private Semaphore semaforAccesALListaDePosicions;
@@ -21,14 +17,13 @@ public class MagatzemCombustible_v4 {
    	public MagatzemCombustible_v4() {
    		Character[] posicions = {'0','0','0','0','0','0','0','0','0','0'};
    		posicionsEnMagatzem.addAll(Arrays.asList(posicions));
-   		
+   		// se inicializa el semaforo junto con el constructor, este es de 1 canal.
    		semaforAccesALListaDePosicions = new Semaphore(1); 
     }
     
     
    	public synchronized int numContenidorsAlMagatzem() {
    		int numContenidors;
-   		
    		
    		numContenidors = 0;
    		for(char ocupada : posicionsEnMagatzem) {
@@ -45,8 +40,7 @@ public class MagatzemCombustible_v4 {
     public boolean produirContenidorDeCombustible() {
     	int posTmp;
     	boolean exitOperacio = false;
-    	
-    	
+    	    	
     	if (numContenidorsAlMagatzem() < 10) {
     		try {
     			semaforAccesALListaDePosicions.acquire();

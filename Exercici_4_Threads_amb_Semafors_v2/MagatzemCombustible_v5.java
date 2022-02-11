@@ -48,7 +48,6 @@ public class MagatzemCombustible_v5 {
     	int posTmp;
     	boolean exitOperacio = false;
     	
-    	
     	try {
 			semaforAccesALListaDePosicions.acquire();
 		} catch (InterruptedException e1) {
