@@ -5,11 +5,6 @@
  */
 package Exercici_4_Threads_amb_Semafors_v3;
 
-
-/**
- *
- * @author gines
- */
 public class exercici_2_v6 {
 	static public void inicialitzarPrograma() {
 		int numTubs = 3;									// Indica quants tubs hi ha. Només es pot llançar 1 torpede per tub simultàneament.

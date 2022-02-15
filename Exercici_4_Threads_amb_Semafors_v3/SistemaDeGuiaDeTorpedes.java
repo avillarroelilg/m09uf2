@@ -9,10 +9,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.Semaphore;
 
-/**
- *
- * @author gines
- */
 public class SistemaDeGuiaDeTorpedes {
 	private int numDeTorpedesQuePotGuiarSimultaneament;
     private Semaphore semaforAssignacioSistemaDeGuia;
@@ -53,8 +49,6 @@ public class SistemaDeGuiaDeTorpedes {
 		System.out.println(resultat);
     }
 	
-
-
 	// Aqui nomes arriben fins a 3 torpedes.
    	// Aquí només poden entrar d'un en un gràcies al syncronized. Recordar que 3 torpedes llançats simultàneament 
     // poden arribar aquí a la vegada. NO FA FALTA FER synchronized AL METODE PERQUE LA 1a LINIA DE CODI ES UN SEMAFOR
