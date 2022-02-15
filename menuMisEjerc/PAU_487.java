@@ -1,4 +1,4 @@
-package menuTodo;
+package menuMisEjerc;
 
 import Pantalles.MenuConstructorPantalla;
 
@@ -64,39 +64,42 @@ public class PAU_487 {
             
             opcio = sc.next();
             
-            
+            String str = "selecciono la opcion ";
             switch (opcio) {
                 case "1":
-                	try {
-						Exercici_1.inicialitzarPrograma();
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+				//Exercici_1.inicialitzarPrograma();
+                	printarMensaje(str+opcio);
+					
                     bloquejarPantalla();
                     break;
                 case "2":
-                	exercici_2_v1.inicialitzarPrograma();
+                	//exercici_2_v1.inicialitzarPrograma();
+                	printarMensaje(str+opcio);
                     bloquejarPantalla();
                     break;
                 case "3":
-                	exercici_2_v2.inicialitzarPrograma();
+                	//exercici_2_v2.inicialitzarPrograma();
+                	printarMensaje(str+opcio);
                     bloquejarPantalla();
                     break;
                 case "4":
-                	exercici_2_v3.inicialitzarPrograma();
+                	//exercici_2_v3.inicialitzarPrograma();
+                	printarMensaje(str+opcio);
                     bloquejarPantalla();
                     break;
                 case "5":
-                	exercici_2_v4.inicialitzarPrograma();
+                	//exercici_2_v4.inicialitzarPrograma();
+                	printarMensaje(str+opcio);
                     bloquejarPantalla();
                     break;    
                 case "6":
-                	exercici_2_v5.inicialitzarPrograma();
+                	//exercici_2_v5.inicialitzarPrograma();
+                	printarMensaje(str+opcio);
                     bloquejarPantalla();
                     break;    
                 case "10":
-                	exercici_2_v6.inicialitzarPrograma();
+                	//exercici_2_v6.inicialitzarPrograma();
+                	printarMensaje(str+opcio);
                     bloquejarPantalla();
                     break;
                 case "50":
@@ -106,5 +109,9 @@ public class PAU_487 {
             }   
         } while (!opcio.equals("50"));
     }
+    public static void printarMensaje(String str_tp) {
+    	System.out.println(str_tp);
+		
+	}
     
 }
