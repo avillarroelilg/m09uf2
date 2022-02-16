@@ -12,7 +12,6 @@ public class CapDeDepartament implements Runnable {
 		this.movimentRacions = movimentRacions;
 	}
 
-
 	// Lo que s'executa quan executem un Thread (li fem el start()).
 	@Override
 	public void run() {
