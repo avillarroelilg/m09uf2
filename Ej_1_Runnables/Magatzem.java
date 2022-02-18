@@ -16,8 +16,8 @@ public class Magatzem extends magatzen_v1 {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
-		this.quantitatRacions -=  numRacions;
+		//los negativos se suman no se restan
+		this.quantitatRacions +=  numRacions;
 	}
 	
 	@Override

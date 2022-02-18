@@ -1,7 +1,5 @@
 package Ej_1_Runnables;
 
-import Ej_1_Runnables.CapDeDepartament;
-import Ej_1_Runnables.Magatzem;
 
 public class Exercici_1 {
 	static long filID;
@@ -17,13 +15,13 @@ public class Exercici_1 {
 		Thread filCapDepartamentArmes = new Thread(new CapDeDepartament(magatzemTmp, 100));
 		filCapDepartamentArmes.setName("Fil del departament 'armes'");
 		
-		Thread filCapDepartamentTimoINavegacio = new Thread(new CapDeDepartament(magatzemTmp, (-30)));
+		Thread filCapDepartamentTimoINavegacio = new Thread(new CapDeDepartament(magatzemTmp, -30));
 		filCapDepartamentTimoINavegacio.setName("Fil del departament 'timó i navegació'");
 		
 		Thread filCapDepartamentEnginyeria = new Thread(new CapDeDepartament(magatzemTmp, 1000));
 		filCapDepartamentEnginyeria.setName("Fil del departament 'enginyeria'");
 		
-		Thread filCapDepartamentCiencia = new Thread(new CapDeDepartament(magatzemTmp, (-50)));
+		Thread filCapDepartamentCiencia = new Thread(new CapDeDepartament(magatzemTmp, -50));
 		filCapDepartamentCiencia.setName("Fil del departament 'ciència'");
 		
 		filCapDepartamentComandament.start();

@@ -69,8 +69,7 @@ public class PAU_487 {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-				//Exercici_1.inicialitzarPrograma();
-                	printarMensaje(str+opcio);
+	                printarMensaje(str+opcio);
 					
                     bloquejarPantalla();
                     break;

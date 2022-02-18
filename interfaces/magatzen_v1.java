@@ -7,3 +7,4 @@ public abstract class magatzen_v1 {
 	public abstract int comprovarQuantitatRacions(); //retornarà quantitatRacions.
 
 }
+

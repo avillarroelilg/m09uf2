@@ -5,15 +5,10 @@ import Ej_1_Runnables.Magatzem;
 public class CapDeDepartament implements Runnable {
 	private Magatzem magatzem;
 	int movimentRacions;
-<<<<<<< HEAD
-	public CapDeDepartament() {
 
-=======
-	
 	public CapDeDepartament(Magatzem magatzemTmp, int movimentRacions) {
 		this.magatzem = magatzemTmp;
-		this.movimentRacions = movimentRacions;
->>>>>>> c39670c36c855e18104efba63d2e839f12576c3c
+		this.movimentRacions = movimentRacions;		
 	}
 	
 	@Override

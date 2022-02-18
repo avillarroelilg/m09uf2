@@ -13,7 +13,6 @@ package Exercici_2_Threads_extends_Thread_v1;
 public class DeptEnginyeriaConsumidor_v1 extends Thread {
     private MagatzemCombustible_v1 magatzemDeCombustible;
     
-    
     public DeptEnginyeriaConsumidor_v1(MagatzemCombustible_v1 magatzemDeCombustible) {
         this.magatzemDeCombustible = magatzemDeCombustible;
     }
