@@ -7,13 +7,9 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.Scanner;
 
-import Exercici_1_Threads_implements_Runnable.Exercici_1;
-import Exercici_2_Threads_extends_Thread_v1.exercici_2_v1;
-import Exercici_2_Threads_extends_Thread_v2.exercici_2_v2;
-import Exercici_3_Threads_amb_Notify_Wait.exercici_2_v3;
-import Exercici_4_Threads_amb_Semafors_v1.exercici_2_v4;
-import Exercici_4_Threads_amb_Semafors_v2.exercici_2_v5;
-import Exercici_4_Threads_amb_Semafors_v3.exercici_2_v6;
+import Ej_1_Runnables.Exercici_1;
+
+
 
 public class PAU_487 {
     
@@ -67,6 +63,12 @@ public class PAU_487 {
             String str = "selecciono la opcion ";
             switch (opcio) {
                 case "1":
+					try {
+						Exercici_1.inicialitzarPrograma();
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				//Exercici_1.inicialitzarPrograma();
                 	printarMensaje(str+opcio);
 					

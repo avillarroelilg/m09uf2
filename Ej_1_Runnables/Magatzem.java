@@ -10,7 +10,7 @@ public class Magatzem extends magatzen_v1 {
 	@Override
 	public synchronized void agafaRacions(int numRacions) {
 		
-		System.out.println("    " + Thread.currentThread().getName() + ".SLEEP");
+		System.out.println(" " + Thread.currentThread().getName() + ".SLEEP");
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
