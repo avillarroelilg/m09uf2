@@ -3,7 +3,9 @@ package Ej_1_Runnables;
 public class CapDeDepartament implements Runnable {
 	private Magatzem magatzem;
 	int movimentRacions;
-	
+	public CapDeDepartament() {
+
+	}
 	
 	@Override
 	public void run() {
